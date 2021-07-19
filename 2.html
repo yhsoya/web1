@@ -3,14 +3,57 @@
 <head>
   <title> web1 - 2html </title>
   <meta charset="utf-8">
+  <style>
+     #active {
+      color:coral;
+    }
+    a {
+      text-decoration: none;
+      color:black;
+    }
+   
+    .saw {
+      color:gray;
+    }
+    
+    h1 {
+      font-size:60px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body> 
-  <h1><a href="index.html">제목이여</a></h1>
+  <h1><a href="index.html">CSS 배운다</a></h1>
   <ul>
-  <li><a href="1.html">1. html</a></li>
-  <li><a href="2.html">2. css</a></li>
+  <li><a href="1.html"class="saw">1. html</a></li>
+  <li><a href="2.html"class="saw" id="active">2. css</a></li>
   <li><a href="3.html">3. javascript</a></li>
 </ul>
-  <h2> 메롱 </h2>
+  <h2> css가 나타나면서... </h2>
+  <ol>
+  <li>중복의 제거 : 폰트 태그가 1억개라면 모두 일일이 바꿀 것인가?</li>
+  <li>웹 페이지 유지 보수를 편리하게 할 수 있다</li>
+  <li>가독성도 높아진다</li>
+  <li>디자인과 관련된 태그는 모두 style 태그에만 갇혀있기 때문에 정보만 가져갈 수 있다</li>
+  <li>이것이 css가 나온 이유 html는 너무 중요하기 때문에 html의 정보 기능이 너무 중요하기 때문에 디자인에 대한 기능을 뺀 것
+  css를 통한 디자인이 훨씬 효율적이기 때문에</li>
+</ol>
+<h3>css 기본 문법</h3>
+html과 css를 구분하는 방법 (style 태그 외에..)
+<br>현재 창을 다른 컬러로 표시하고 싶을 때<br>
+style이라는 속성을 쓰면, 그 속성의 값을 웹 브라우저는 css 문법에따라 해석해서 결과를 style 속성이 포함되어있는 태그에 보여줄 것이다.
+<br>강조표시 한 것은 주고싶은 효과를 어디에 줄 것인가 -> 선택자(selector), 선택자에 의해 지정될 효과를 효과 혹은 선언(declaration)이라 한다.
+<br>style 태그를 사용할 때는 선택자를 사용할 필요가 없다.
+<br>세미콜론;은 효과 구분하기 위한 것
+<br>속성 검색하기 css font size property , css text align center 이런식으로 검색하면 우리는 속성을 다 알고 있는 것이나 마찬가지라구
+<br>코드 치기 시작하면 추천어를 준다 심지어 허허
+<br>외우지 마라 검색해라 
+<h3>선택자 그리고 효과</h3>
+가까이에 있는 명령어가 더 큰 영향력을 갖는다 (최근명령)
+<br>우선순위가 높은것을 사용하면 된다 id라는 선택자
+<br>앞에 #을 붙이면 우선순위가 높아짐 id선택자가 class 선택자보다 우선순위가 높다.
+<br>클래스 선택자와 태그 선택자가 있다면 클래스 선택자가 우선순위로 적용됨 (태그 < 클래스 < id)
+<br>id는 중복 사용될 수 없다.
+<br> elemnet 와 태그는 같은 의미로 쓰인다
 </body>
 </html>
